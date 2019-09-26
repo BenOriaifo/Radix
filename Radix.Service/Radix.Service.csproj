@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DataTables.AspNet.AspNetCore" Version="2.0.2" />
+    <PackageReference Include="DataTables.AspNet.Core" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\radix.Core\Radix.Core.csproj" />
+    <ProjectReference Include="..\Radix.ViewModel\Radix.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mouldifi - A fully responsive, HTML5 based admin theme">
+    <meta name="keywords" content="Responsive, HTML5, admin theme, business, professional, Mouldifi, web design, CSS3">
+    <title>Mouldifi | Data Tables</title>
+    <!-- Site favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <!-- /site favicon -->
+    <!-- Entypo font stylesheet -->
+    <link href="css/entypo.css" rel="stylesheet">
+    <!-- /entypo font stylesheet -->
+    <!-- Font awesome stylesheet -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- /font awesome stylesheet -->
+    <!-- CSS3 Animate It Plugin Stylesheet -->
+    <link href="css/plugins/css3-animate-it-plugin/animations.css" rel="stylesheet">
+    <!-- /css3 animate it plugin stylesheet -->
+    <!-- Bootstrap stylesheet min version -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/customStyles.css" rel="stylesheet" />
+    <!-- /bootstrap stylesheet min version -->
+    <!-- Mouldifi core stylesheet -->
+    <link href="css/mouldifi-core.css" rel="stylesheet">
+    <!-- /mouldifi core stylesheet -->
+    <!-- Summernote-->
+    <link href="css/plugins/summernote/summernote.css" rel="stylesheet">
+    <!-- /Summernote-->
+    @*<!-- Markdown-->
+        <link href="css/plugins/markdown/bootstrap-markdown.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/mouldifi-forms.css">
+        <!-- /Markdown-->*@
+
+    <link href="css/mouldifi-forms.css" rel="stylesheet">
+    <link href="css/plugins/datatables/jquery.dataTables.css" rel="stylesheet">
+    <link href="js/plugins/datatables/extensions/Buttons/css/buttons.dataTables.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="js/html5shiv.min.js"></script>
+          <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!-- Page container -->
+    <div class="page-container">
+
+        <!-- Page sidebar -->
+        <div class="page-sidebar">
+
+            <!-- Site header  -->
+            <header class="site-header">
+                <div class="site-logo"><a href="index.html"><img src="images/logo.png" alt="Mouldifi" title="Mouldifi"></a></div>
+                <div class="sidebar-collapse hidden-xs"><a class="sidebar-collapse-icon" href="#"><i class="icon-menu"></i></a></div>
+                <div class="sidebar-mobile-menu visible-xs"><a data-target="#side-nav" data-toggle="collapse" class="mobile-menu-icon" href="#"><i class="icon-menu"></i></a></div>
+            </header>
+            <!-- /site header -->
+            <!-- Main navigation -->
+            <ul id="side-nav" class="main-menu navbar-collapse collapse">
+                <li class="has-sub">
+                    <a href="index.html"><i class="icon-gauge"></i><span class="title">Dashboard</span></a>
+                </li>
+                <li class="has-sub">
+                    <a href="collapsed-sidebar.html"><i class="icon-layout"></i><span class="title">Message</span></a>
+                    <ul class="nav collapse">
+                        <li><a href="messagetype/index"><span class="title">Message Type</span></a></li>
+                        <li><a href="messageTemplate/index"><span class="title">Message Template</span></a></li>
+                        <li><a href="AdhocMessage/index"><span class="title">Adhoc Message</span></a></li>
+                        <li><a href="message/index"><span class="title">Generic Message</span></a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="collapsed-sidebar.html"><i class="icon-layout"></i><span class="title">Notification Subscription</span></a>
+                    <ul class="nav collapse">
+                        <li><a href="notificationsubscription/index"><span class="title">Notification Subscription</span></a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="collapsed-sidebar.html"><i class="icon-layout"></i><span class="title">Service Configuration</span></a>
+                    <ul class="nav collapse">
+                        <li><a href="ServiceConfiguration/index"><span class="title">Service Configuration</span></a></li>
+                    </ul>
+                </li>                
+            </ul>
+            <!-- /main navigation -->
+        </div>
+        <!-- /page sidebar -->
+        <!-- Main container -->
+        <div class="main-container">
+
+            <!-- Main header -->
+            <div class="main-header row">
+                <div class="col-sm-6 col-xs-7">
+
+                    <h1 class="page-title">Data Tables</h1>
+
+                </div>
+
+                <div class="col-sm-6 col-xs-5">
+                    <div class="pull-right">
+                        <!-- User alerts -->
+                        <ul class="user-info pull-left">
+
+                            <li class="profile-info dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> <img width="44" class="img-circle avatar" alt="" src="images/man-3.jpg">John Henderson <span class="caret"></span></a>
+
+                                <!-- User action menu -->
+                                <ul class="dropdown-menu">
+
+                                    <li><a href="#/"><i class="icon-user"></i>My profile</a></li>
+                                    <li><a href="#/"><i class="icon-mail"></i>Messages</a></li>
+                                    <li><a href="#"><i class="icon-clipboard"></i>Tasks</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="icon-cog"></i>Account settings</a></li>
+                                    <li><a href="#"><i class="icon-logout"></i>Logout</a></li>
+                                </ul>
+                                <!-- /user action menu -->
+
+                            </li>
+
+                            <!-- Messages -->
+                            <li class="notifications dropdown">
+                                <a data-close-others="true" data-hover="dropdown" data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon-mail"></i><span class="badge badge-secondary">12</span></a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li class="first">
+                                        <div class="dropdown-content-header"><i class="fa fa-pencil-square-o pull-right"></i> Messages</div>
+                                    </li>
+                                    <li>
+                                        <ul class="media-list">
+                                            <li class="media">
+                                                <div class="media-left"><img alt="" class="img-circle img-sm" src="images/domnic-brown.png"></div>
+                                                <div class="media-body">
+                                                    <a class="media-heading" href="#">
+                                                        <span class="text-semibold">Domnic Brown</span>
+                                                        <span class="media-annotation pull-right">Tue</span>
+                                                    </a>
+                                                    <span class="text-muted">Your product sounds interesting I would love to check this ne...</span>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <div class="media-left"><img alt="" class="img-circle img-sm" src="images/john-smith.png"></div>
+                                                <div class="media-body">
+                                                    <a class="media-heading" href="#">
+                                                        <span class="text-semibold">John Smith</span>
+                                                        <span class="media-annotation pull-right">12:30</span>
+                                                    </a>
+                                                    <span class="text-muted">Thank you for posting such a wonderful content. The writing was outstanding...</span>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <div class="media-left"><img alt="" class="img-circle img-sm" src="images/stella-johnson.png"></div>
+                                                <div class="media-body">
+                                                    <a class="media-heading" href="#">
+                                                        <span class="text-semibold">Stella Johnson</span>
+                                                        <span class="media-annotation pull-right">2 days ago</span>
+                                                    </a>
+                                                    <span class="text-muted">Thank you for trusting us to be your source for top quality sporting goods...</span>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <div class="media-left"><img alt="" class="img-circle img-sm" src="images/alex-dolgove.png"></div>
+                                                <div class="media-body">
+                                                    <a class="media-heading" href="#">
+                                                        <span class="text-semibold">Alex Dolgove</span>
+                                                        <span class="media-annotation pull-right">10:45</span>
+                                                    </a>
+                                                    <span class="text-muted">After our Friday meeting I was thinking about our business relationship and how fortunate...</span>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <div class="media-left"><img alt="" class="img-circle img-sm" src="images/domnic-brown.png"></div>
+                                                <div class="media-body">
+                                                    <a class="media-heading" href="#">
+                                                        <span class="text-semibold">Domnic Brown</span>
+                                                        <span class="media-annotation pull-right">4:00</span>
+                                                    </a>
+                                                    <span class="text-muted">I would like to take this opportunity to thank you for your cooperation in recently completing...</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="external-last"> <a class="danger" href="#">All Messages</a> </li>
+                                </ul>
+                            </li>
+                            <!-- /messages -->
+
+                        </ul>
+                        <!-- /user alerts -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- /main header -->
+            <!-- Main content -->
+            <div class="main-content">
+                <!-- Breadcrumb -->
+                <ol class="breadcrumb breadcrumb-2">
+                    <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="basic-tables.html">Tables</a></li>
+                    <li class="active"><strong>Data Tables</strong></li>
+                </ol>
+                <div class="row dynamic-content">
+                    @RenderBody()
+                </div>
+
+                <!-- Footer -->
+                <footer class="animatedParent animateOnce z-index-10">
+                    <div class="footer-main animated fadeInUp slow">&copy; 2016 <strong>Mouldifi</strong> Admin Theme by <a target="_blank" href="#/">G-axon</a> </div>
+                </footer>
+                <!-- /footer -->
+
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- /main container -->
+
+    </div>
+    <!-- /page container -->
+
+
+    <environment include="Development">
+        <!--Load JQuery-->
+        <script src="js/jquery.min.js"></script>
+        <!-- Load CSS3 Animate It Plugin JS -->
+        <script src="js/plugins/css3-animate-it-plugin/css3-animate-it.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="~/js/plugins/metismenu/jquery.metisMenu.js"></script>
+        <!--Summernote Editor-->
+        <script src="js/plugins/summernote/summernote.min.js"></script>
+        <!--Markdown Editor-->
+        <script src="js/plugins/markdown/bootstrap-markdown.js"></script>
+        <script src="js/plugins/markdown/markdown.js"></script>
+
+        <script src="js/plugins/blockui-master/jquery-ui.js"></script>
+        <script src="js/plugins/blockui-master/jquery.blockUI.js"></script>
+        <script src="~/js/bootstrap-confirmation.min.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="~/js/jquery.validate.min.js"></script>
+        <script src="~/js/parsley.min.js"></script>
+        <script src="~/js/bootstrapValidator.min.js"></script>
+        <script src="~/js/notify.min.js"></script>
+
+        <script src="~/js/vue.min.js"></script>
+        <script src="~/js/toastr.min.js"></script>
+
+        <!-- Custom JS Files-->
+        <script src="js/custom/menu.js"></script>
+        <script src="~/js/custom/form-helper.js"></script>
+        <script src="~/js/custom/page-load-helper.js"></script>
+
+        <script src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="js/plugins/datatables/dataTables.bootstrap.min.js"></script>
+        <script src="js/plugins/datatables/extensions/Buttons/js/dataTables.buttons.min.js"></script>
+        <script src="js/plugins/datatables/jszip.min.js"></script>
+        <script src="js/plugins/datatables/pdfmake.min.js"></script>
+        <script src="js/plugins/datatables/vfs_fonts.js"></script>
+        <script src="js/plugins/datatables/extensions/Buttons/js/buttons.html5.js"></script>
+        <script src="js/plugins/datatables/extensions/Buttons/js/buttons.colVis.js"></script>
+        @*<script>
+            $(document).ready(function () {
+
+            $('.dataTables-example').DataTable({
+                dom: '<"html5buttons" B>lTfgitp',
+                buttons: [
+                    {
+                        extend: 'copyHtml5',
+                        exportOptions: {
+                            columns: [0, ':visible']
+                        }
+                    },
+                    {
+                        extend: 'excelHtml5',
+                        exportOptions: {
+                            columns: ':visible'
+                        }
+                    },
+                    {
+                        extend: 'pdfHtml5',
+                        exportOptions: {
+                            columns: [0, 1, 2, 3, 4]
+                        }
+                    },
+                    'colvis'
+                ]
+            });
+        });
+        </script>*@
+    </environment>
+
+    
+
+</body>
+</html>

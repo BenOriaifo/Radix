@@ -1,0 +1,58 @@
+﻿@model Radix.ViewModel.ServiceConfigurationViewModel
+
+<form class="form-horizontal" id="service-form" action="ServiceConfiguration/Create">
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label>Message Type</label>
+                <select class="form-control" v-model="vm.serviceConfiguration.messageTypeId" id="messageTypeId" name="messageTypeId">
+                    <option value="">Select Type</option>
+                    <option v-for="messageTypeId in vm.messageTypes" v-bind:value="messageTypeId.id">
+                        {{messageTypeId.type}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="recipient">Maximum Records To Fetch</label>
+                <input type="number" placeholder="Maximum Records to fetch" id="maximumRecordsToFetch" class="form-control" v-model="vm.serviceConfiguration.maximumRecordsToFetch" name="maximumRecordsToFetch" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="phone">Wait Time (In Mins)</label>
+                <input type="number" placeholder="Wait Time" id="waitTime" class="form-control" name="waitTime" v-model="vm.serviceConfiguration.waitTime" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="hidden" id="sub-btn" class="btn btn-sm btn-default" value="submit" />
+    </div>
+</form>
+
+@*<form asp-action="Create">
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-6">
+                <div class="form-group-inner">
+                    <label class="control-label" asp-for="Pin">Pin</label>
+                    <input type="text" id="pin" class="form-control" name="pin" asp-for="Pin" />
+                    <span asp-validation-for="Pin" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group-inner">
+                    <label class="control-label" asp-for="FullName">Full Name</label>
+                    <input type="text" id="pin" class="form-control" name="pin" asp-for="FullName" />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <input type="hidden" id="sub-btn" class="btn btn-sm btn-default" value="submit" />
+        </div>
+    </form>*@

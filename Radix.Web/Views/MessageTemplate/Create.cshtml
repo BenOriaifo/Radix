@@ -1,0 +1,56 @@
+﻿@model Radix.ViewModel.MessageTemplateViewModel
+
+<form class="form-horizontal" id="messageTemplate" asp-action="Create" asp-antiforgery="true">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group-inner">
+                <label class="control-label" for="messageType">Message Type</label>
+                <select class="form-control" id="messageType" name="messageType" v-model="vm.info.messageTypeId">
+                    <option value="">Select Message Type</option>
+                    <option v-bind:value="messageType.id" v-for="messageType in vm.types">
+                        {{messageType.type}}
+                    </option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group-inner">
+                <label for="messageTemplate">SMS Message </label>
+                <input type="text" placeholder="SMS Message" id="messageTemplate" class="form-control" v-model="vm.info.smsTemplate" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group-inner">
+                <label class="control-label" for="emailTemplate">Email Template: </label>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="col-md-12">
+            @*@Html.EditorFor(m => m.EmailTemplate, null, new { @class="form-control", @rows= 8, @cols= 6, data_provide="markdown", v_model="vm.info.emailTemplate" })*@
+            <div class="col-md-12">
+                <textarea name="content" id="emailTemplate" data-provide="markdown" rows="8" cols="6" v-model="vm.info.emailTemplate" placeholder="Enter Message for the Template"></textarea>
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="submit" class="hide hidden" value="submit" id="sub-btn" />
+    </div>
+</form>
+
+<script>
+    $(document).ready(function () {
+        $('#emailTemplate').summernote({
+            height: 170,                 // set editor height
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+            focus: true                  // set focus to editable area after initializing summernote
+        });
+    });
+</script>

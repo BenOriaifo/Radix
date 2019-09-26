@@ -1,0 +1,22 @@
+﻿@model Radix.ViewModel.MessageTypeViewModel
+
+<form class="form-vertical" id="messageType" asp-action="Create" asp-antiforgery="true">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="code">Code</label>
+                <input type="text" placeholder="Code" id="code" name="code" class="form-control" v-model="vm.info.code" />
+                <span></span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="type">Type</label>
+                <input type="text" placeholder="Code" id="type" name="type" class="form-control" v-model="vm.info.type" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="submit" class="hide hidden" value="submit" id="sub-btn" />
+    </div>
+</form>

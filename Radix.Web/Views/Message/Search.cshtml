@@ -1,0 +1,50 @@
+﻿<form class="form-horizontal" id="search-form" action="Message/Search" data-parsley-validate="">
+    <div class="row">
+        <p style="margin-bottom:-11px; margin-left: 14px;"><strong>Date Extracted</strong></p>
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="pin">From</label>
+                <input type="date" class="form-control" id="dateExtractedFrom" v-model="vm.additionalParameters.dateExtractedFrom" required />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="recipient">To</label>
+                <input type="date" class="form-control" id="dateExtractedTo" v-model="vm.additionalParameters.dateExtractedTo" required />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p style="margin-bottom:-11px; margin-left: 14px;"><strong>Date Sent</strong></p>
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="pin">From</label>
+                <input type="date" class="form-control" id="dateSentFrom" v-model="vm.additionalParameters.dateSentFrom" required />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="recipient">To</label>
+                <input type="date" id="dateSentTo" class="form-control" v-model="vm.additionalParameters.dateSentTo" required />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="phone">Employer Name</label>
+                <input type="text" class="form-control" id="employerName" v-model="vm.additionalParameters.employerName" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="email">Employer Code</label>
+                <input type="email" class="form-control" id="employerCode" v-model="vm.additionalParameters.employerCode"/>
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="hidden" id="search-sub-btn" class="btn btn-sm btn-default" value="submit" />
+    </div>
+</form>

@@ -1,0 +1,126 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\sass\.sass-cache\04a7ea46b1d177991d1114ad656394209140945f\mouldifi-core.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_accordions.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_alerts.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_badges.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_base.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_breadcrumbs.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_buttons.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_carousel.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_dashboards.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_filter.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_footer.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_forms.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_global.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_graphs.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_header.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_icons.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_input-groups.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_labels.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_mailbox.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_mixins.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_navbar.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_navs.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_pager.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_panels.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_popovers.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_progress-bars.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_sidebar.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_tables.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_typography.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_variables.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_various-screens.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\55258fcf2b0dbbcc01df7c0dbf8888b8f2606ff2\_views.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_accordions.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_alerts.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_badges.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_base.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_breadcrumbs.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_buttons.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_carousel.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_dashboards.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_extra-pages.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_filter.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_footer.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_forms.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_global.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_graphs.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_header.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_icons.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_input-groups.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_labels.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_mailbox.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_mixins.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_navbar.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_navs.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_pager.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_panels.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_popovers.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_progress-bars.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_sidebar.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_tables.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_timeline.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_typography.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_variables.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_various-screens.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\5707a232d6da0f0116c0f1163b7c8e6b066a852e\_views.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\7f8819af33ec92d17acb8cd0cf98a2bc5a1179c9\mouldifi-core.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\f9e4395641875bd9cac4d61eb2e7502991b6117a\mouldifi-core.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_accordions.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_alerts.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_badges.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_base.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_breadcrumbs.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_buttons.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_carousel.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_dashboards.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_filter.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_footer.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_forms.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_global.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_graphs.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_header.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_icons.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_input-groups.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_labels.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_mailbox.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_mixins.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_navbar.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_navs.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_pager.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_panels.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_popovers.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_progress-bars.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_sidebar.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_tables.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_timeline.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_typography.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_variables.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_various-screens.scssc" />
+    <None Include="wwwroot\sass\.sass-cache\fa921a47f31c0370eb6e31a01c262a03b646d26a\_views.scssc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\radix.Core\Radix.Core.csproj" />
+    <ProjectReference Include="..\Radix.Persistence\Radix.Persistence.csproj" />
+    <ProjectReference Include="..\Radix.Service\Radix.Service.csproj" />
+    <ProjectReference Include="..\Radix.ViewModel\Radix.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

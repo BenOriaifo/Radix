@@ -1,0 +1,104 @@
+﻿@model Radix.ViewModel.MessageViewModel
+
+<form class="form-horizontal" id="message-form" action="Message/Create" data-parsley-validate="">
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="pin">RSA PIN</label>
+                <input type="text" placeholder="Pin" id="RSAPIN" class="form-control" name="RSAPIN" v-model="vm.message.RSAPIN" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="recipient">Full Name</label>
+                <input type="text" placeholder="Full Name" id="recipient" class="form-control" v-model="vm.message.fullName" name="fullName" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="phone">Phone</label>
+                <input type="text" placeholder="phone" id="phone" class="form-control" name="mobilePhone" v-model="vm.message.mobilePhone" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group-inner">
+                <label class="control-label" for="email">Email</label>
+                <input type="email" placeholder="Email" id="email" class="form-control" name="email" v-model="vm.message.email" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group-inner">
+                <label class="control-label" for="messageCode">Message Code</label>
+                <input type="text" placeholder="Message Code" id="messageCode" class="form-control" name="messageCode" v-model="vm.message.messageCode" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group-inner">
+                <label for="messageTemplate">SMS Message </label>
+                <input type="text" id="smsMessage" class="form-control" name="smsMessage" v-model="vm.message.smsMessage" />
+                <input type="hidden"  id="myEmail" value="" v-model="vm.message.myEmail"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group-inner">
+                <label class="control-label" for="emailTemplate">Email Template</label>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="col-md-12">
+            <textarea name="emailMessage" id="emailMessage" data-provide="markdown" rows="8" cols="6" v-model="vm.message.emailMessage">
+                                        h1 header
+                                        ============
+
+                                        Paragraphs are separated by a blank line.
+
+                                        2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
+                                        look like:
+
+                                        * this one
+                                        * that one
+                                        * the other one
+            </textarea>
+        </div>
+    </div>
+    <div>
+        <input type="hidden" id="sub-btn" class="btn btn-sm btn-default" value="submit" />
+    </div>
+</form>
+
+@*<form asp-action="Create">
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-6">
+                <div class="form-group-inner">
+                    <label class="control-label" asp-for="Pin">Pin</label>
+                    <input type="text" id="pin" class="form-control" name="pin" asp-for="Pin" />
+                    <span asp-validation-for="Pin" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group-inner">
+                    <label class="control-label" asp-for="FullName">Full Name</label>
+                    <input type="text" id="pin" class="form-control" name="pin" asp-for="FullName" />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <input type="hidden" id="sub-btn" class="btn btn-sm btn-default" value="submit" />
+        </div>
+    </form>*@
